@@ -35,9 +35,12 @@ export default function WeatherApp() {
     }
 
     return (
-        <div>
-            <WeatherForm onChangeCity={handleChangeCity} />
-            <WeatherMain weather={weather} />
-        </div>
+        <>
+            <h1 className='text-center'>El Clima</h1>
+            <div className='max-w-xl mx-auto pt-10 px-4'>
+                <WeatherForm onChangeCity={handleChangeCity} />
+                <WeatherMain weather={weather} />
+            </div>
+        </>
     )
 }
