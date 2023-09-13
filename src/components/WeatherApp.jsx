@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import WeatherForm from './WeatherForm'
+import WeatherMain from './WeatherMain';
 
 const REACT_APP_KEY = 'cb99321b20924a3cbd7184734231209';
 const REACT_APP_URL = 'https://api.weatherapi.com/v1/current.json?aqi=no'
@@ -9,11 +10,11 @@ export default function WeatherApp() {
 
     useEffect(() => {
         loadInfo();
-    },[])
+    }, [])
 
     useEffect(() => {
         document.title = `Clima | ${weather?.location.name ?? ''}`
-    },[weather])
+    }, [weather])
 
     async function loadInfo(city = 'san miguel de tucuman') {
         try {
@@ -36,7 +37,7 @@ export default function WeatherApp() {
     return (
         <div>
             <WeatherForm onChangeCity={handleChangeCity} />
-            <div>{weather?.current.temp_c}</div>
+            <WeatherMain weather={weather} />
         </div>
     )
 }

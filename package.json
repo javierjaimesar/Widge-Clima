@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "09-clima-widge",
-=======
   "name": "09-clima-widget",
->>>>>>> ab2ff9eb15fc57a1096697ba3e8e284f1a83b068
   "private": true,
   "version": "0.0.0",
   "type": "module",
