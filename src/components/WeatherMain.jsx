@@ -13,7 +13,7 @@ function WeatherMain({ weather }) {
                 </div>
             </div>
             <div className='flex py-5'>
-                <p className="text-lg">{`${weather?.location.name} - ${weather?.location.country}`}</p>
+                <p className="text-base">{`${weather?.location.name}, ${weather?.location.region} - ${weather?.location.country}`}</p>
                 <img src={location} alt="location" width={'20px'} className='mx-1' />
             </div>
             <div className="max-w-xl">

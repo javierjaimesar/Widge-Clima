@@ -19,7 +19,7 @@ function WeatherForm({ onChangeCity }) {
 
     return (
         <form onSubmit={handleSubmit} className='pb-4'>
-            <input type="text" placeholder='San Miguel de Tucuman, Tucuman' onChange={onChange} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+            <input type="text" placeholder='San Miguel de Tucuman, Tucuman' onChange={onChange} className="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" />
         </form>
     )
 }
